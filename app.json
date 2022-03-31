@@ -10,7 +10,7 @@
   "success_url": "https://telegram.com/animextlive",
   "website": "https://github.com/Yunoasta/captionerbotj",
   "repository": "https://github.com/Yunoasta/captionerbotj",
-  "logo": "http://www.deviantart.com%2Fb-a-i-o-r-e-t-t-o%2Fart%2FMonkey-D-Luffy-Gear-5-One-Piece-911117502&psig=AOvVaw3mjcHR2fdRRFiBZeKTHgc4&ust=1648836169574000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDI8_268PYCFQAAAAAdAAAAABAJ",
+  "logo": "https://telegra.ph/file/b763a6c152533eb9b9d9f.png",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
