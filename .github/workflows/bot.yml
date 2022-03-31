@@ -11,7 +11,7 @@ env:
   API_HASH: "${{ secrets.APP_ID }}"
   CAPTION_POSITION: "${{ secrets.CAPTION_POSITION }}"
   CAPTION_TEXT: "${{ secrets.CAPTION_TEXT }}"
-  TG_BOT_TOKEN: "${{ secrets.TG_BOT_TOKEN }}"
+  BOT_TOKEN: "${{ secrets.TG_BOT_TOKEN }}"
    
 
 
@@ -46,7 +46,7 @@ jobs:
           #  echo "CAPTION_POSITION: "${{ secrets.CAPTION_POSITION }}" | tee -a .env
           #  echo "CAPTION_TEXT: "${{ secrets.CAPTION_TEXT }} | tee -a .env
           #  
-          #  echo "TG_BOT_TOKEN="${{ secrets.TG_BOT_TOKEN }} | tee -a .env || echo "Proceeding with no bot"
+          #  echo "BOT_TOKEN="${{ secrets.TG_BOT_TOKEN }} | tee -a .env || echo "Proceeding with no bot"
           #  cat .env
        - name: Running
          timeout-minutes: 350
