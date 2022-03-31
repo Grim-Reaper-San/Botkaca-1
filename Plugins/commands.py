@@ -22,6 +22,8 @@ start_button=InlineKeyboardMarkup(
               ], 
               [
                   InlineKeyboardButton("🤩 Help", callback_data = "help_data"), 
+                  InlineKeyboardButton("🛡 About", callback_data = "about_data")
+              ], 
               [
                   InlineKeyboardButton("🔐 Close", callback_data = "close_data")
               ] 
@@ -168,7 +170,7 @@ async def button(bot, cmd: CallbackQuery):
                         InlineKeyboardButton("🖋 Current Caption", callback_data = "status_data")
                        ], 
                        [
-                        InlineKeyboardButton("Channel", url="https://t.me/animextlive"),
+                        InlineKeyboardButton("🍃 Follow Me", url="https://Instagram.com/proavipatil"),
                         InlineKeyboardButton("📕 About Me", callback_data="about_data")
                        ],
                        [
