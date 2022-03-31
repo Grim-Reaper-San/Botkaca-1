@@ -53,7 +53,7 @@ __○ ᴄʀᴇᴀᴛᴏʀ :  Unknown__
 🔸 <code>`ANIMEXT`</code>   
 
 👉 <b>Hyperlink text</b>
-🔹 <code>[hyperlink_text](https://avipatilweb.me)</code> 
+🔹 <code>[hyperlink_text](https://ZORO.TO)</code> 
 
 〰〰〰〰〰〰〰〰〰〰
 
