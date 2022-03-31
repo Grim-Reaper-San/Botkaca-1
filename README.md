@@ -1,4 +1,4 @@
-<h1 align='center'>🖊️ TG AutoCaption Bot </h1>
+<h1 align='center'>🖊️ Telegram AutoCaption Bot </h1>
 
 
 <h4 align='center'>Bot Used For Auto Caption For Telegram Files & Video With Custom Text<br><br><i>(Only in channels either public or private Telegram channel)</i> </h4><br>
