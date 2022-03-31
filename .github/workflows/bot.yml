@@ -3,7 +3,7 @@ on:
     schedule:
       - cron: "0 */6 * * *"
     push:
-      branches: [ Newpatch ]
+      branches: [ main ]
     workflow_dispatch:
     
 env:
