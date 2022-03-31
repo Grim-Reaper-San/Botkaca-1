@@ -15,15 +15,15 @@ caption_position = usercaption_position.lower()
 caption_text = Config.CAPTION_TEXT
 
 
-@autocaption.on_message(filters.channel & (filters.document | filters.photo |  filters.video | filters.audio ) & ~filters.edited, group=-1)
+@autocaption.on_message(filters.channel & (filters.photo) & ~filters.edited, group=-1)
 async def editing(bot, message):
       try:
-         media = message.document or filters.photo or message.video or message.audio
+         media = filters.photo
          caption_text = Config.CAPTION_TEXT
       except:
          caption_text = ""
          pass 
-      if (message.document or filters.photo or message.video or message.audio): 
+      if (filters.photo): 
           if message.caption:                        
              file_caption = f"**{message.caption}**"                
           else:
