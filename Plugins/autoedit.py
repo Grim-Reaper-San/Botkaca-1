@@ -43,7 +43,9 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = file_caption + "\n" + caption_text,
+                 file_captions = jj
+                 jj = jj.replace(file_captions[-50:], "#anime")
+                 caption = jj + "\n" + caption_text,
                  parse_mode = "markdown"
              )
           elif caption_position == "nil":
