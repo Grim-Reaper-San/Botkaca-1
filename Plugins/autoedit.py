@@ -30,10 +30,21 @@ async def editing(bot, message):
              fname = media.file_name
              filename = fname.replace("_", ".")
              file_caption = f"`{filename}`"  
-      new_file_caption = file_caption.replace(file_caption[:10], "✨")     
-      newa_file_caption = new_file_caption.replace("- 0", "Episode 0")  
-      newb_file_caption = newa_file_caption.replace("- 1", "Episode 1") 
-      newc_file_caption = newb_file_caption.replace("- 2", "Episode 2")
+      new_file_caption = file_caption.replace(file_caption[:10], "")     
+      newa_file_caption = new_file_caption.replace("- 0", "| Episode 0")  
+      newb_file_caption = newa_file_caption.replace("- 1", "| Episode 1") 
+      newc_file_caption = newb_file_caption.replace("- 2", "| Episode 2")
+      newd_file_caption = newc_file_caption.replace("- 3", "| Episode 3")
+      newe_file_caption = newd_file_caption.replace("- 4", "| Episode 4")
+      newf_file_caption = newe_file_caption.replace("- 5", "| Episode 5")
+      newg_file_caption = newf_file_caption.replace("- 6", "| Episode 6")
+      newh_file_caption = newg_file_caption.replace("- 7", "| Episode 7")
+      newi_file_caption = newh_file_caption.replace("- 8", "| Episode 8")
+      newj_file_caption = newi_file_caption.replace("- 9", "| Episode 9")
+      newk_file_caption = newj_file_caption.replace("S1", "| Season 1")
+      newl_file_caption = newk_file_caption.replace("S3", "| Season 3")
+      newm_file_caption = newl_file_caption.replace("S4", "| Season 4")
+      
       try:
           if caption_position == "top":
              await bot.edit_message_caption(
@@ -46,7 +57,7 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = newc_file_caption.replace(newc_file_caption[-26:], " ") + caption_text,
+                 caption = newm_file_caption.replace(newm_file_caption[-26:], " ") + caption_text,
                  parse_mode = "markdown"
              )
           elif caption_position == "nil":
