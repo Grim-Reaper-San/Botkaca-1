@@ -46,7 +46,7 @@ async def editing(bot, message):
       newm_file_caption = newl_file_caption.replace("S3", "| Season 4")
       newn_file_caption = newm_file_caption.replace("S4", "| Season 4")
       newo_file_caption = newn_file_caption.replace("was released!!", "**")
-      newp_file_caption = newo_file_caption.replace(newo_file_caption[0], "**")         
+      newp_file_caption = ' '.join(newo_file_caption.replace("**")[1:])        
       
       try:
           if caption_position == "top":
