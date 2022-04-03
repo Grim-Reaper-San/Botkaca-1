@@ -22,10 +22,10 @@ jobs:
        - uses: actions/setup-node@v2
          with:
             node-version: '16'
-       - name: Set up Python 3.9
+       - name: Set up Python 3.8.7
          uses: actions/setup-python@v2.2.2
          with:
-           python-version: 3.9
+           python-version: 3.8.7
        - name: cloning repo and install
 
          continue-on-error: true
