@@ -31,7 +31,7 @@ async def editing(bot, message):
              filename = fname.replace("_", ".")
              file_caption = f"`{filename}`"  
       new_file_caption = ' '.join(file_caption.split()[1:])  
-      newa_file_caption = new_file_caption.replace("- 0", "| Episode 0")  
+      newa_file_caption = new_file_caption.replace("- 0", "\n" + "• Episode 0")  
       newb_file_caption = newa_file_caption.replace("- 1", "| Episode 1") 
       newc_file_caption = newb_file_caption.replace("- 2", "| Episode 2")
       newd_file_caption = newc_file_caption.replace("- 3", "| Episode 3")
