@@ -5,15 +5,6 @@ on:
     push:
       branches: [ Newpatch ]
     workflow_dispatch:
-    
-env:
-  APP_ID: "${{ secrets.APP_ID }}"
-  API_HASH: "${{ secrets.API_HASH }}"
-  OWNER: "${{ secrets.OWNER }}"
-  BOT_TOKEN: "${{ secrets.BOT_TOKEN }}"
-  CAPTION_POSITION: "${{ secrets.CAPTION_POSITION }}"
-  CAPTION_TEXT: "${{ secrets.CAPTION_TEXT }}"
-
 
 jobs:
   build:
@@ -41,13 +32,6 @@ jobs:
          run: |
            sudo apt -qq update && sudo apt -qq install -y --no-install-recommends ffmpeg neofetch
            pip3 install -r requirements.txt
-          #  echo "APP_ID=${{ secrets.APP_ID }} | tee .env
-          #  echo "API_HASH=${{ secrets.API_HASH }} | tee -a .env
-          #  echo "OWNER={{ secrets.OWNER }} | tee -a .env
-          #  echo "CAPTION_POSITION={{ secrets.CAPTION_POSITION }} | tee -a .env" 
-          #  echo "CAPTION_TEXT={{ secrets.CAPTION_TEXT }} | tee -a .env" 
-          #  echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }} | tee -a .env || echo "Proceeding with no bot"
-          #  cat .env
        - name: Running
          timeout-minutes: 350
          continue-on-error: true
