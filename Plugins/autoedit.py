@@ -45,6 +45,7 @@ async def editing(bot, message):
       newm_file_caption = newl_file_caption.replace("S4", "Season 4")
       newn_file_caption = newm_file_caption.replace("S5", "Season 5")      
       newo_file_caption = file_caption.replace(" ", "_")
+      newp_file_caption = newo_file_caption
       try:
           if caption_position == "top":
              await bot.edit_message_caption(
@@ -57,7 +58,7 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = f"📺 {newn_file_caption}" + "\n" + newo_file_caption.replace(file_caption[-9:], "") + "\n" + f"**{caption_text}**",
+                 caption = f"📺 {newn_file_caption}" + "\n" + newp_file_caption.replace(newp_file_caption[-7:], "") + "\n" + f"**{caption_text}**",
                  parse_mode = "markdown"
              )
           elif caption_position == "nil":
