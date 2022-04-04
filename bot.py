@@ -11,6 +11,7 @@ from config import Config
 from pyrogram import Client 
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
+
 class autocaption(Client):
     
     def __init__(self):
