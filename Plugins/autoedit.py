@@ -30,7 +30,6 @@ async def editing(bot, message):
              fname = media.file_name
              filename = fname.replace("_", ".")
              file_caption = f"**{filename}**"   
-       newo_file_caption = file_caption.replace(file_caption[-7:], "")
       newa_file_caption = file_caption.replace("- 0", "\n" + "🗓 Episode 0")  
       newb_file_caption = newa_file_caption.replace("- 1", "\n" + "🗓 Episode 1") 
       newc_file_caption = newb_file_caption.replace("- 2", "\n" + "🗓 Episode 2")
@@ -57,7 +56,7 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = f"📺 {newn_file_caption}" + "\n" + f"#{file_caption.replace(" ", "_")}" + "\n" + f"**{caption_text}**",
+                 caption = f"📺 {newn_file_caption}" + "\n" + f'#{file_caption.replace(file_caption[-7:], "")} + "\n" + f"**{caption_text}**",
                  parse_mode = "markdown"
              )
           elif caption_position == "nil":
