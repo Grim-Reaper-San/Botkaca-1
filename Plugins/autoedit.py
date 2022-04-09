@@ -41,7 +41,7 @@ async def editing(bot, message):
       newi_file_caption = newh_file_caption.replace("- 8", "\n" + "🗓 Episode 8")
       newj_file_caption = newi_file_caption.replace("- 9", "\n" + "🗓 Episode 9")
       newk_file_caption = newj_file_caption.replace("S2", "Season 2")
-      newl_file_caption = newk_file_caption.replace("S3", "Season 2")
+      newl_file_caption = newk_file_caption.replace("S3", "Season 3")
       newm_file_caption = newl_file_caption.replace("S4", "Season 4")
       newn_file_caption = newm_file_caption.replace("S5", "Season 5")      
       newo_file_caption = file_caption.replace(" ", " #")
