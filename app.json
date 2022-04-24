@@ -15,6 +15,7 @@
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
       "value": "ANYTHING"
+    },
     "CAPTION_TEXT": {
       "description": "Add your caption Defult will be [Markdown] [nothing]",
       "value": "", 
