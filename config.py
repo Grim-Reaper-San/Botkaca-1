@@ -4,7 +4,6 @@ import os
 
 class Config(object):
       BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-      API_ID = "3845818"
       API_HASH = os.environ.get("API_HASH")
       CAPTION_TEXT = os.environ.get("CAPTION_TEXT", "")
       CAPTION_POSITION = os.environ.get("CAPTION_POSITION", "nil")
