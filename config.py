@@ -9,6 +9,3 @@ class Config(object):
       CAPTION_TEXT = "📍 English Sub\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚙️ `Web-DL (Source)`\n     📥 `480p/720p/1080p`  ➙ [DOWNLOAD](http://t.me/airing_anime_webdl)\n\n⚙️ `x264 Encodes (SOFT-SUB)`\n     📥 `480p`   ➙ [DOWNLOAD](http://t.me/airing_anime_480p)\n     📥 `720p`   ➙ [DOWNLOAD](http://t.me/airing_anime_720p)\n     📥 `1080p` ➙ [DOWNLOAD](http://t.me/airing_anime_1080p)\n\n⚙️ `x265 HEVC Encodes (SOFT-SUB)`\n     📥 `480p`   ➙ [DOWNLOAD](http://t.me/airing_anime_480p_x265)\n     📥 `720p`   ➙ [DOWNLOAD](http://t.me/airing_anime_720p_x265)\n     📥 `1080p` ➙ [DOWNLOAD](http://t.me/airing_anime_1080p_x265)\n\n⚙️ `TG - Stream (HARD-SUB)`\n     🖥  ➙ [DOWNLOAD/STREAM](http://t.me/autoanime)\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n__(Encoded Files will be uploaded as soon as it finishes encoding)__\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📡 **@Latest_Ongoing_Airing_Anime**"
       CAPTION_POSITION = "BOTTOM"
       ADMIN_USERNAME = "The_Pirate_Emperor"
-"
-      CAPTION_POSITION = "BOTTOM"
-      ADMIN_USERNAME = "The_Pirate_Emperor"
