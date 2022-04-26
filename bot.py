@@ -13,9 +13,9 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
 class autocaption(Client):
-            bot_token = Config.BOT_TOKEN,
             api_id = Config.API_ID,
             api_hash = Config.API_HASH,
+            bot_token = Config.BOT_TOKEN,
             workers = 20,
             plugins = dict(
                 root="Plugins"
