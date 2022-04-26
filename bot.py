@@ -13,7 +13,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
 class autocaption(Client):
-            api_id = Config.API_ID,
+            api_id = "3845818",
             api_hash = Config.API_HASH,
             bot_token = Config.BOT_TOKEN,
             workers = 20,
