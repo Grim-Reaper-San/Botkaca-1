@@ -26,7 +26,7 @@ async def editing(bot, message):
       if (message.text): 
           if message.text:                        
              message_text = f"{message.text}"
-           if message_text.find("magnet")
+           if message_text.find("magnet"):
              message_text = f"/leech {message.text}"     
              else:
                     return
