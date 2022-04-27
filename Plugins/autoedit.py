@@ -26,11 +26,10 @@ async def editing(bot, message):
       if (message.text): 
           if message.text:                        
              message_text = f"{message.text}"                
+             message_text = message_text.replace("magnet" + "/leech magnet")
           else:
-             fname = media.file_name
-             filename = fname.replace("_", ".")
-             file_caption = f"**{filename}**"                     
-      try:
+               return                     
+    try:
           if caption_position == "top":
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
@@ -42,7 +41,7 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = f"/leech {message_text}" + "\n" + f"{caption_text}",
+                 caption = f"{message_text}" + "\n" + f"{caption_text}",
                  parse_mode = "markdown"
              )
           elif caption_position == "nil":
