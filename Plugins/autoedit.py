@@ -24,9 +24,8 @@ async def editing(bot, message):
          caption_text = ""
          pass 
       if (message.text): 
-          if message.text:                        
-             message_text = f"{message.text}"                
-             newa_message_text = message_text.replace("magnet" + "/leech magnet")                     
+          if message.text("magnet"):                        
+             message_text = f"{message.text}"                                     
       try:
           if caption_position == "top":
              await bot.edit_message_caption(
@@ -39,7 +38,7 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = f"{newa_message_text}" + "\n" + f"{caption_text}",
+                 caption = f"{message_text}" + "\n" + f"{caption_text}",
                  parse_mode = "markdown"
              )
           elif caption_position == "nil":
