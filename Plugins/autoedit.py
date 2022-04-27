@@ -24,8 +24,8 @@ async def editing(bot, message):
          caption_text = ""
          pass 
       if (message.text): 
-          if message.text("magnet"):                        
-             message_text = f"{message.text}"                                     
+          if message.text("magnet'):                        
+             message_text = f"/leech {message.text}"                                     
       try:
           if caption_position == "top":
              await bot.edit_message_caption(
