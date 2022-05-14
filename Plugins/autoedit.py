@@ -60,7 +60,7 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = newp_file_caption.replace(newp_file_caption[-24:], "") + "\n" + f"{caption_text}",
+                 caption = newp_file_caption.replace(newp_file_caption[-27:], "") + "\n" + f"{caption_text}",
                  parse_mode = "html"
              )
           elif caption_position == "nil":
