@@ -25,7 +25,7 @@ async def editing(bot, message):
          pass 
       if (message.photo): 
           if message.caption:                        
-             file_caption = f"<b><b>{message.caption}</b></b>"                
+             file_caption = f"<b>{message.caption}"                
           else:
              fname = media.file_name
              filename = fname.replace("_", ".")
@@ -45,7 +45,7 @@ async def editing(bot, message):
       newl_file_caption = newk_file_caption.replace("S3", "Season 2")
       newm_file_caption = newl_file_caption.replace("S4", "Season 4")
       newn_file_caption = newm_file_caption.replace("S5", "Season 4")
-      newo_file_caption = newn_file_caption.replace(" was released!!", "】【English Subbed】")        
+      newo_file_caption = newn_file_caption.replace(" was released!!", "】【English Subbed】</b>")        
       newp_file_caption = f"📺 {newo_file_caption}"
       
       try:
