@@ -25,7 +25,7 @@ async def editing(bot, message):
          pass 
       if (message.photo): 
           if message.caption:                        
-             file_caption = f"<b><b>{message.caption}"                
+             file_caption = f"{message.caption}"                
           else:
              fname = media.file_name
              filename = fname.replace("_", ".")
@@ -46,7 +46,7 @@ async def editing(bot, message):
       newm_file_caption = newl_file_caption.replace("S4", "Season 4")
       newn_file_caption = newm_file_caption.replace("S5", "Season 4")
       newo_file_caption = newn_file_caption.replace(" was released!!", "】【English Subbed】")        
-      newp_file_caption = f"📺 {newo_file_caption}"
+      newp_file_caption = f"📺 <b><b>{newo_file_caption}"
       
       try:
           if caption_position == "top":
