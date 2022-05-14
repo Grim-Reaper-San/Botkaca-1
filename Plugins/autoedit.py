@@ -25,7 +25,7 @@ async def editing(bot, message):
          pass 
       if (message.photo): 
           if message.caption:                        
-             file_caption = f"<b>{message.caption}"                
+             file_caption = f"<b><b>{message.caption}"                
           else:
              fname = media.file_name
              filename = fname.replace("_", ".")
@@ -60,7 +60,7 @@ async def editing(bot, message):
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
-                 caption = newp_file_caption.replace(newp_file_caption[-26:], "</b>") + "\n" + f"{caption_text}",
+                 caption = newp_file_caption.replace(newp_file_caption[-26:], "</b></b>") + "\n" + f"{caption_text}",
                  parse_mode = "html"
              )
           elif caption_position == "nil":
